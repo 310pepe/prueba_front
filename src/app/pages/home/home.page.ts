@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import Swal from 'sweetalert2';
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
 export class HomePage {
 
   constructor() {}
+
+  hola(){
+    Swal.fire('Any fool can use a computer')
+  }
 
 }
